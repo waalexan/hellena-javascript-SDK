@@ -1,0 +1,30 @@
+{
+  "name": "hellena-javascript-sdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Helena-mother/hellena-javascript-SDK.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Helena-mother/hellena-javascript-SDK/issues"
+  },
+  "homepage": "https://github.com/Helena-mother/hellena-javascript-SDK#readme",
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "graphql-request": "^7.4.0"
+  }
+}
