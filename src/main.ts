@@ -6,5 +6,5 @@ export class HellenaClient extends HellenaConnect {
 
     constructor(apiKey: string) {
         super(apiKey);
-    }
+    }    
 }
