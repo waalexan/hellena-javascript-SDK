@@ -1,20 +1,26 @@
 {
-  "name": "hellena-javascript-sdk",
-  "version": "1.0.0",
+  "name": "@hellena-sdk/hellena",
+  "version": "1.0.1",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/main.js",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/index.js",
+    "start": "node dist/main.js",
+    "pack": "mkdir -p packages && npm pack && mv *.tgz packages/",
     "dev": "node --loader ts-node/esm src/index.ts"
   },
-  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "packDestination": "./packages",
+  "types": "dist/main.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "import": "./dist/main.js",
+      "types": "./dist/main.d.ts"
     }
   },
+  "files": ["dist"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Helena-mother/hellena-javascript-SDK.git"
