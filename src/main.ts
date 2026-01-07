@@ -1,12 +1,10 @@
-class HellenaClient {
-    private apiUrl: string = "https://hellena-api-for-devs.vercel.app";
-    private apiVersion: string = "v1";
-    private apiHost: string = `${this.apiUrl}/${this.apiVersion}`;
-    private apiKey: string;
+import { HellenaConnect } from "./core/HellenaConnect.js";
+import { ProductModel } from "./resources/product/product.model.js";
 
-    private productService: ProductService;
+export class HellenaClient extends HellenaConnect {
+    public readonly product = ProductModel(this);
 
-    constructor({ apiKey }: { apiKey: string }) {
-        this.apiKey = apiKey;
+    constructor(apiKey: string) {
+        super(apiKey);
     }
 }
