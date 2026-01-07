@@ -1,4 +1,4 @@
-# hellena-JavaScript-SDK
+# hellena-SDK
 
 A JavaScript SDK for the Hellena platform.
 
