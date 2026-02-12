@@ -19,7 +19,7 @@ export interface ProductDTO {
     material: string[] | null;
     size: string[] | null;
     tags: string[] | null;
-    Price: PriceDTO[];
+    prices: PriceDTO[];
     unit: string;
     quantity: number;
 }
